@@ -17,3 +17,9 @@ __pycache__/
 *.pyzw
 *.pyzwz
 *.pyzwzw
+
+# Project-specific
+.env
+data/raw/
+data/structured/
+data/reports/
