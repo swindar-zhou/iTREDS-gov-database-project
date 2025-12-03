@@ -153,9 +153,15 @@ Phase outputs:
 
 ## Pilot on Fewer Counties or Full Run
 
-The pilot scripts already target 5 counties (San Diego, Alameda, Fresno, Sacramento, Kern).
-For the legacy one-shot script, you can still run:
+The `run_pipeline.py` script targets 10 counties by default:
+- Alameda, Fresno, Sacramento, Kern, Los Angeles, San Francisco, Orange, Riverside, Santa Clara, Contra Costa
 
+To run individual phases or customize counties:
+- **Phase 1 only**: `python scraper_discovery.py` (modify the county list in the script)
+- **Phase 2 only**: `python scraper_extract.py` (processes `data/discovery_results.json`)
+- **Phase 3 only**: `python scraper_structure.py` (processes `data/raw/` files)
+
+For the legacy all-in-one script:
 ```python
 # python scraper.py
 # Inside it, you may uncomment the slice to limit counties:
@@ -164,31 +170,54 @@ For the legacy one-shot script, you can still run:
 
 ## Files
 
-- `scraper_discovery.py` - Phase 1: discovery (collect program links for 5-county pilot)
-- `scraper_extract.py` - Phase 2: deep extraction (raw page JSON with contacts/PDFs)
+### Core Scripts
+- `scraper_discovery.py` - Phase 1: Discovery (collect program links for counties)
+- `scraper_extract.py` - Phase 2: Deep extraction (raw page JSON with contacts/PDFs)
 - `scraper_structure.py` - Phase 3: LLM structuring → CSV (budget‑guarded)
-- `scraper.py` - Legacy all-in-one scraper (OpenAI/Anthropic/Ollama)
 - `run_pipeline.py` - Orchestrates all 3 phases for 10 preselected counties
-- `test_setup.py` - Connectivity checks for providers
-- `.env.example` - Template for configuration
+- `scraper.py` - Legacy all-in-one scraper (OpenAI/Anthropic/Ollama)
+
+### Configuration & Setup
+- `test_setup.py` - Connectivity checks for API providers (OpenAI/Anthropic/Ollama)
+- `.env.example` - Template for environment configuration
+- `.env` - Your local configuration (gitignored, create from `.env.example`)
 - `requirements.txt` - Python dependencies
+
+### Documentation & Assets
+- `workflow-demo/workflow-ref.md` - Detailed workflow documentation
+- `workflow-demo/workflow-visuals.jsx` - React component for workflow visualization
 
 ## Folder Structure
 
 ```
 iTREDS-gov-database-project-1/
 ├── data/
-│   ├── discovery_results.json        # Phase 1 output
-│   ├── raw/                          # Phase 2 raw pages per county
-│   │   └── {county}/*.json
-│   ├── structured/                   # (optional) future structured JSON
-│   └── reports/                      # Phase 4 quality reports (future)
-├── scraper_discovery.py              # Phase 1
-├── scraper_extract.py                # Phase 2
-├── scraper_structure.py              # Phase 3
-├── scraper.py                        # Legacy all-in-one
-├── run_pipeline.py                   # Batch runner for 10 counties
-└── California_County_Healthcare_Data.csv  # Phase 3 CSV output
+│   ├── discovery_results.json        # Phase 1 output: discovered program links per county
+│   ├── raw/                          # Phase 2 output: raw page content per county
+│   │   ├── {county-slug}/
+│   │   │   └── program-{hash}.json   # One JSON file per program page
+│   │   ├── los-angeles/              # Example: Los Angeles county raw data
+│   │   └── san-diego/                # Example: San Diego county raw data
+│   ├── structured/                   # Phase 3 output: structured CSV files
+│   │   ├── California_{County}_Healthcare_Data.csv  # Per-county CSVs
+│   │   ├── California_Los_Angeles_Healthcare_Data.csv
+│   │   └── California_County_Healthcare_Data_San_Diego.csv
+│   ├── reports/                      # Quality reports (future)
+│   └── Raw_Data.csv                  # Legacy combined raw data (if generated)
+├── workflow-demo/                    # Workflow visualization assets
+│   ├── workflow-ref.md              # Workflow documentation
+│   └── workflow-visuals.jsx         # React component for workflow visualization
+├── scraper_discovery.py              # Phase 1: Discovery script
+├── scraper_extract.py                # Phase 2: Deep extraction script
+├── scraper_structure.py              # Phase 3: LLM structuring script
+├── scraper.py                        # Legacy all-in-one scraper
+├── run_pipeline.py                   # Batch runner for 10 counties (orchestrates all 3 phases)
+├── test_setup.py                     # Connectivity checks for API providers
+├── requirements.txt                  # Python dependencies
+├── .env.example                      # Environment configuration template
+├── .env                              # Your local config (gitignored, not in repo)
+├── .gitignore                        # Git ignore rules
+└── California_County_Healthcare_Data.csv  # Phase 3 combined CSV output (optional)
 ```
 
 ## Budget Guardrails (OpenAI)
