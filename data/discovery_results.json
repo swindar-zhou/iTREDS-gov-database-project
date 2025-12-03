@@ -1,146 +1,6 @@
 {
-  "generated_at": "2025-12-02T18:54:46.162057",
+  "generated_at": "2025-12-02T19:35:46.903257",
   "results": [
-    {
-      "county_name": "San Diego",
-      "county_url": "https://www.sandiegocounty.gov/",
-      "health_dept_url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ais.html",
-      "maternal_section_url": "https://www.sandiegocounty.gov/content/sdc/home.html",
-      "programs": [
-        {
-          "name": "Aging & Independence Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ais.html",
-          "link_text": "Aging & Independence Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Behavioral Health Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/bhs.html",
-          "link_text": "Behavioral Health Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Child and Family Well-Being",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/cs/child_welfare_services.html",
-          "link_text": "Child and Family Well-Being",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Medical Care Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/mcsd.html",
-          "link_text": "Medical Care Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Public Health",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs.html",
-          "link_text": "Public Health",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Self-Sufficiency Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ssp.html",
-          "link_text": "Self-Sufficiency Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "CalFresh (Food Stamps)",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ssp/food_stamps.html",
-          "link_text": "CalFresh (Food Stamps)",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Medi-Cal",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ssp/medi-cal_program.html",
-          "link_text": "Medi-Cal",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Child Abuse",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/cs/child_welfare_services/child_abuse_hotline.html",
-          "link_text": "Child Abuse",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Elder Abuse",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ais/Services/Adult-Protective-Services.html",
-          "link_text": "Elder Abuse",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Tobacco Complaints",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/tobacco_control_resource_program/smoking_laws.html",
-          "link_text": "Tobacco Complaints",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Birth Certificate (Last 24 Months)",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/office_of_vital_records_and_statistics/birth_certificates.html",
-          "link_text": "Birth Certificate (Last 24 Months)",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Veterans Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ssp/veterans_services.html",
-          "link_text": "Veterans Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "CalWorks",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ssp/calworks.html",
-          "link_text": "CalWorks",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Access Customer Service Call Center",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ssp/access.html",
-          "link_text": "Access Customer Service Call Center",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "County Medical Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ssp/county_medical_services.html",
-          "link_text": "County Medical Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "In-Home Supportive Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ais/Services/In-Home-Supportive-Services.html",
-          "link_text": "In-Home Supportive Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Affordable Care Act",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ssp/affordable_care_act.html",
-          "link_text": "Affordable Care Act",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Get Mental Health or Substance Use Help",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/bhs/get_help_now.html",
-          "link_text": "Get Mental Health or Substance Use Help",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Mental Health, Children",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/bhs/csu/esu.html",
-          "link_text": "Mental Health, Children",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "Adult Protective Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/ais/adult_protective_services.html",
-          "link_text": "Adult Protective Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        },
-        {
-          "name": "More Services",
-          "url": "https://www.sandiegocounty.gov/content/sdc/cosd/services.html",
-          "link_text": "More Services",
-          "nav_path": "Main → Health Dept → Maternal/Child"
-        }
-      ]
-    },
     {
       "county_name": "Alameda",
       "county_url": "https://www.acgov.org/",
@@ -167,6 +27,79 @@
       "county_url": "https://www.kerncounty.com/",
       "health_dept_url": "",
       "maternal_section_url": "",
+      "programs": []
+    },
+    {
+      "county_name": "Los Angeles",
+      "county_url": "https://www.lacounty.gov/",
+      "health_dept_url": "https://www.lacounty.gov/",
+      "maternal_section_url": "https://www.lacounty.gov/",
+      "programs": [
+        {
+          "name": "",
+          "url": "https://lacounty.gov/services/pay/",
+          "link_text": "",
+          "nav_path": "Main → Health Dept → Maternal/Child"
+        },
+        {
+          "name": "",
+          "url": "https://lacounty.gov/services/apply-for/",
+          "link_text": "",
+          "nav_path": "Main → Health Dept → Maternal/Child"
+        },
+        {
+          "name": "",
+          "url": "https://lacounty.gov/services/register-as-a/",
+          "link_text": "",
+          "nav_path": "Main → Health Dept → Maternal/Child"
+        },
+        {
+          "name": "",
+          "url": "https://lacounty.gov/services/report/",
+          "link_text": "",
+          "nav_path": "Main → Health Dept → Maternal/Child"
+        },
+        {
+          "name": "",
+          "url": "https://lacounty.gov/services/request-documents/",
+          "link_text": "",
+          "nav_path": "Main → Health Dept → Maternal/Child"
+        }
+      ]
+    },
+    {
+      "county_name": "San Francisco",
+      "county_url": "https://sf.gov/",
+      "health_dept_url": "https://sf.gov/#main-content",
+      "maternal_section_url": "https://sf.gov/#main-content",
+      "programs": []
+    },
+    {
+      "county_name": "Orange",
+      "county_url": "https://www.ocgov.com/",
+      "health_dept_url": "https://www.ocgov.com/about-county/orange-county-hall-fame",
+      "maternal_section_url": "",
+      "programs": []
+    },
+    {
+      "county_name": "Riverside",
+      "county_url": "https://www.rivco.org/",
+      "health_dept_url": "",
+      "maternal_section_url": "",
+      "programs": []
+    },
+    {
+      "county_name": "Santa Clara",
+      "county_url": "https://www.sccgov.org/",
+      "health_dept_url": "",
+      "maternal_section_url": "",
+      "programs": []
+    },
+    {
+      "county_name": "Contra Costa",
+      "county_url": "https://www.contracosta.ca.gov/",
+      "health_dept_url": "https://www.contracosta.ca.gov/#cc3e031053-0ffc-426b-a55f-771292c83bd0",
+      "maternal_section_url": "https://www.contracosta.ca.gov/#cc3e031053-0ffc-426b-a55f-771292c83bd0",
       "programs": []
     }
   ]

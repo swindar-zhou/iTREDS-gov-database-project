@@ -20,6 +20,3 @@ __pycache__/
 
 # Project-specific
 .env
-data/raw/
-data/structured/
-data/reports/

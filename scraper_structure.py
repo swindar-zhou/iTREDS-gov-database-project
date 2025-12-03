@@ -191,6 +191,16 @@ def main():
     if not results_list:
         print("\n⚠ No structured data produced")
         return
+    # Save per-county CSVs under data/structured
+    os.makedirs(os.path.join("data", "structured"), exist_ok=True)
+    def safe_name(name: str) -> str:
+        return name.replace(" ", "_")
+    for county in results_list:
+        county_name = county.get("county_name", "Unknown")
+        filename = os.path.join("data", "structured", f"{STATE_NAME}_{safe_name(county_name)}_Healthcare_Data.csv")
+        save_to_csv([county], filename)
+        print(f"✓ Wrote county CSV: {filename}")
+    # Also write combined CSV (backward compatible)
     save_to_csv(results_list, OUTPUT_FILE)
     total_programs = sum(len(c.get("programs", [])) for c in results_list)
     print("\n" + "="*60)
@@ -198,7 +208,8 @@ def main():
     print("="*60)
     print(f"Counties with data: {len(results_list)}")
     print(f"Total programs structured: {total_programs}")
-    print(f"Output file: {OUTPUT_FILE}")
+    print(f"Output file (combined): {OUTPUT_FILE}")
+    print(f"Per-county files: data/structured/{STATE_NAME}_<County>_Healthcare_Data.csv")
     print("="*60 + "\n")
 
 if __name__ == "__main__":

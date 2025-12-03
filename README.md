@@ -147,7 +147,9 @@ DATA_COLLECTOR_NAME=Swindar    # For attribution
 Phase outputs:
 - Phase 1: `data/discovery_results.json`
 - Phase 2: `data/raw/{county}/*.json` (one per program page)
-- Phase 3: `California_County_Healthcare_Data.csv`
+- Phase 3: Per‑county CSVs in `data/structured/`:
+  - `data/structured/California_<County>_Healthcare_Data.csv`
+  - Plus a combined file `California_County_Healthcare_Data.csv` for convenience
 
 ## Pilot on Fewer Counties or Full Run
 
@@ -166,6 +168,7 @@ For the legacy one-shot script, you can still run:
 - `scraper_extract.py` - Phase 2: deep extraction (raw page JSON with contacts/PDFs)
 - `scraper_structure.py` - Phase 3: LLM structuring → CSV (budget‑guarded)
 - `scraper.py` - Legacy all-in-one scraper (OpenAI/Anthropic/Ollama)
+- `run_pipeline.py` - Orchestrates all 3 phases for 10 preselected counties
 - `test_setup.py` - Connectivity checks for providers
 - `.env.example` - Template for configuration
 - `requirements.txt` - Python dependencies
@@ -184,6 +187,7 @@ iTREDS-gov-database-project-1/
 ├── scraper_extract.py                # Phase 2
 ├── scraper_structure.py              # Phase 3
 ├── scraper.py                        # Legacy all-in-one
+├── run_pipeline.py                   # Batch runner for 10 counties
 └── California_County_Healthcare_Data.csv  # Phase 3 CSV output
 ```
 
